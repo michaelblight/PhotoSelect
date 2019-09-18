@@ -155,16 +155,6 @@ namespace PhotoSelect
             }
         }
 
-        private string GetPath(TreeNode node) {
-            List<string> s = new List<string>();
-            while (node.Parent != null) {
-                s.Append(node.Parent.Name);
-                node = node.Parent;
-            }
-            s.Reverse();
-            return string.Join(@"\", s) + @"\";
-;        }
-
         private List<string> ConvertToList(List<RecentFolder> recentFolders) {
             List<string> result = new List<string>();
             recentFolders.ForEach(r => result.Add(r.original + "=" + r.selected));
