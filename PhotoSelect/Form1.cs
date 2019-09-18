@@ -198,7 +198,6 @@ namespace PhotoSelect
                     return;
                 }
             }
-            Console.WriteLine("Couldn't find " + item.Text);
         }
 
         private void ListView1_DrawItem(object sender, DrawListViewItemEventArgs e) {
